@@ -2,6 +2,10 @@
 variable "region" {
   default = "us-east-2"
 }
+
+variable "public_key_name" {
+  default = "publicKey"
+}
 variable "cidr_vpc" {
   description = "CIDR block for the VPC"
   default = "10.1.0.0/16"
