@@ -13,7 +13,7 @@ terraform plan # Generate and show an execution plan
 terraform apply # Builds or changes infrastructure
 ```
 
-Test that nginx is running by navigating to the public IP via the web browser e.g. http://<publicIP>:80
+Test that nginx is running by navigating to the public IP via the web browser e.g. `http://<publicIP>:80`
 
 To test the multiregion support, we can now try deploying to `us-west-2`:
 ```
@@ -23,7 +23,7 @@ terraform plan -var "region=us-west-2" -var "availability_zone=us-west-2a" -var 
 terraform apply -var "region=us-west-2" -var "availability_zone=us-west-2a" -var "instance_ami=ami-6cd6f714" # Builds or changes infrastructure
 ```
 
-Test that nginx is running by navigating to the public IP via the web browser e.g. http://<publicIP>:80
+Test that nginx is running by navigating to the public IP via the web browser e.g. `http://<publicIP>:80`
 
 That's it!  Once we're done with testing, don't forget to tear everything down:
 
